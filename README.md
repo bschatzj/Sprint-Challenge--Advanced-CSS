@@ -1,3 +1,4 @@
+Brendan Schatz
 # Sprint Challenge: Advanced CSS - Space Walkers Web Page
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.
@@ -34,13 +35,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Fully responsive means that the website will change as the size of the screen changes. Adaptive is set up to change at certain breakpoints in the CSS typically for Mobile, Tablets, and Desktops.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first you design the entire website with mobile in mind first. Then you write in "min-width" media quiries to change the layout for a desktop view. Desktop first you do the opposite and write a "max-width" media quirie.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It changes the default font size from 16px to 10px so that REMs will just be multiples of 10 instead of doing difficult math. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing allows you to compile your CSS in a LESS file. Which allows for nesting in the CSS code and to reuse certain elements of your code over and over again.  
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Mix-ins are now my favorite concept in pre-processing because I see how powerful they can be. The multi-layer nesting gives me the most problems because its hard to keep track of closing brackets whick can throw off the whole code. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -78,7 +89,7 @@ Your finished project must include all of the following requirements:
 
 ### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [x] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
@@ -94,29 +105,29 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [x] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [x] Add a viewport meta tag to the head of your index.html page
 
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [x] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
+* [x] Navigation Styles: Use the `navigation.less` file for styling.
 
-* [ ] Main Content Styles: Use the `home-page.less` file for styling
+* [x] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [x] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+* [x] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
-* [ ]  Use at least 2 parameters to create your button
+* [x]  Use at least 2 parameters to create your button
 
-* [ ] Create a hover state that swaps the background color and font color of the base button styles.
+* [x] Create a hover state that swaps the background color and font color of the base button styles.
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [x] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+* [x] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
 * [ ] Push your changes and create a pull request if you haven't already.
 

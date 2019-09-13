@@ -1,1 +1,23 @@
 // Navigation code here
+.header {
+    .flex(space-between,center);
+    flex-direction: column;
+    padding: 15px;
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 12px;
+      @media @mobile {
+          font-size: 2.9rem;
+      } //end mobile
+    } //end h1
+    a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: @ebony-clay;
+      padding: 14px;
+      @media @mobile {
+        font-size: 1.5rem;
+        padding: 5px;
+      } //end mobile
+    } //end anchor tags
+  } //end header

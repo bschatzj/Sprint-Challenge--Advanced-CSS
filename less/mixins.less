@@ -1,1 +1,47 @@
 // Mixins Here
+
+.flex(@justify,@align) {
+    display: flex;
+    align-items: @align;
+    justify-content: @justify;
+}
+
+.big-picture() {
+    width: 90%;
+    height: auto;
+    padding: 1%;
+    margin: 3px;
+}
+
+.button(@background-color, @text-color) {
+    width: 150px;
+    text-align: center;
+    background-color: @background-color;
+    color: @text-color;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    &:hover {
+        background-color: greenyellow;
+        color: @btn-bg-color;
+    }
+}
+
+
+
+
+// animation attempts 
+.zoom() {
+&:hover{
+  transform: scale(1.8);
+  transition: transform 200ms;
+}
+}
+
+.flip{
+    &:hover {
+        transform: rotateY(180deg);
+        transition: 2000ms;
+        opacity: 0;
+  }
+}
