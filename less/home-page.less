@@ -29,6 +29,9 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    .sky {
+    .flip();
+      }
     @media @mobile {
       .flex(center,center);
 
@@ -42,13 +45,20 @@
         .big-picture();
       }
     } // end media
-
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
     } //end img
+    .double {
+      position: relative;
+      .sky {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
   }
 
   .visit-planets {
@@ -119,6 +129,7 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      .zoom();
       @media @mobile {
         .big-picture();
         order: -1;
@@ -130,4 +141,5 @@
       }
     }
   }
+
 }// home

@@ -1,3 +1,8 @@
+.flip:hover {
+  transform: rotateY(180deg);
+  transition: 2000ms;
+  opacity: 0;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -223,6 +228,11 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+.home .space-images .sky:hover {
+  transform: rotateY(180deg);
+  transition: 2000ms;
+  opacity: 0;
+}
 @media (max-width: 500px) {
   .home .space-images {
     display: flex;
@@ -247,6 +257,14 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+.home .space-images .double {
+  position: relative;
+}
+.home .space-images .double .sky {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .home .visit-planets {
   padding: 15px;
@@ -331,6 +349,10 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+.home .walk .walk-img:hover {
+  transform: scale(1.8);
+  transition: transform 200ms;
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {

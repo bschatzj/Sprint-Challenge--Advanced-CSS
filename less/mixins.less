@@ -26,3 +26,22 @@
         color: @btn-bg-color;
     }
 }
+
+
+
+
+// animation attempts 
+.zoom() {
+&:hover{
+  transform: scale(1.8);
+  transition: transform 200ms;
+}
+}
+
+.flip{
+    &:hover {
+        transform: rotateY(180deg);
+        transition: 2000ms;
+        opacity: 0;
+  }
+}
