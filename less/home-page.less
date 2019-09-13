@@ -11,10 +11,16 @@
 
     h2 {
       padding: 15px;
+      @media @mobile {
+        font-size: 2.8rem;
+      }
     }
 
     p {
       padding:0 15px;
+      @media @mobile {
+        font-size: 1.6rem;
+      }
     }
   
   }
@@ -50,10 +56,16 @@
 
     h3 {
       margin-top: 11px;
+      @media @mobile {
+        font-size: 2.1rem;
+      }
     }
 
     p {
       margin-top: 13px;
+      @media @mobile {
+        font-size: 1.6rem;
+      }
     }
   }
 
@@ -70,6 +82,7 @@
       justify-content: center;
       width: 100%;
       padding: 0px;
+      margin-top: 30px;
     }
 
     .walk-text {
@@ -82,15 +95,21 @@
 
       h3 {
         margin-bottom: 10px;
+        @media @mobile {
+          font-size: 2.1rem;
+        }
     }
 
       p {
         margin-bottom: 26px;
+        @media @mobile {
+          font-size: 1.6rem;
+        }
         }
     }
 
       .btn {
-        .button();
+        .button(@btn-bg-color,@porcelain);
        @media @mobile{
           order: 4;
           width: 90%;

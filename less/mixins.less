@@ -13,16 +13,16 @@
     margin: 3px;
 }
 
-.button {
+.button(@background-color, @text-color) {
     width: 150px;
     text-align: center;
-    background-color: @btn-bg-color;
-    color: @porcelain;
+    background-color: @background-color;
+    color: @text-color;
     font-size: 1.5rem;
     padding: 10px;
     border-radius: 10px;
     &:hover {
-        background-color: @porcelain;
+        background-color: greenyellow;
         color: @btn-bg-color;
     }
 }
