@@ -1,3 +1,16 @@
+.button {
+  width: 150px;
+  text-align: center;
+  background-color: #22283A;
+  color: #F6F7F8;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -278,9 +291,23 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .btn {
+  width: 150px;
+  text-align: center;
+  background-color: #22283A;
+  color: #F6F7F8;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+.home .walk .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
 @media (max-width: 500px) {
   .home .walk .btn {
     order: 4;
+    width: 90%;
   }
 }
 .home .walk .walk-img {
